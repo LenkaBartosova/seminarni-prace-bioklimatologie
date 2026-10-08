@@ -154,6 +154,43 @@
       font-size: 0.9rem;
     }
 
+
+    html { scroll-behavior: smooth; }
+
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #dce3df;
+      padding: 12px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #245443;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: bold;
+      margin: 0 9px;
+      white-space: nowrap;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    .important-notice {
+      background: #f2eee3;
+      border: 1px solid #ded5bd;
+      border-left: 5px solid #a47f3b;
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin: 25px 0 35px;
+    }
+
+    .important-notice strong { color: #735c2b; }
+
+    section { scroll-margin-top: 70px; }
+
     @media (max-width: 600px) {
       header {
         padding: 50px 18px;
@@ -177,6 +214,16 @@
   <p>Klimatologická seminární práce 2026/2027</p>
 </header>
 
+<nav>
+  <a href="#zadani">Zadání</a>
+  <a href="#ukoly">Úkoly</a>
+  <a href="#kapitoly">Kapitoly</a>
+  <a href="#forma">Forma práce</a>
+  <a href="#termin">Termín</a>
+  <a href="#zdroje">Zdroje</a>
+  <a href="#dalsi">Další informace</a>
+</nav>
+
 <main>
 
   <div class="intro">
@@ -186,6 +233,12 @@
       požadavky na formu zpracování, strukturu tištěné práce a další důležité informace.
     </p>
   </div>
+
+  <div class="important-notice">
+  <strong>⚠️ Důležité:</strong>
+  Před zahájením práce si prosím přečtěte kompletní zadání
+  a požadavky na formální úpravu práce.
+</div>
 
   <div class="grid">
     <a class="card" href="#zadani">
@@ -245,6 +298,7 @@
     </div>
   </section>
 
+  <!-- ÚKOLY – zde budeš později doplňovat názvy a zadání -->
   <section id="ukoly">
     <h2>📝 Úkoly</h2>
 
@@ -300,6 +354,7 @@
     </div>
   </section>
 
+  <!-- KAPITOLY TIŠTĚNÉ PRÁCE -->
   <section id="kapitoly">
     <h2>📑 Kapitoly tištěné práce</h2>
 
@@ -369,6 +424,7 @@
     </details>
   </section>
 
+  <!-- LITERATURA, ODKAZY A ZDROJE DAT -->
   <section id="zdroje">
     <h2>📚 Literatura, odkazy a zdroje dat</h2>
     <div class="intro">
