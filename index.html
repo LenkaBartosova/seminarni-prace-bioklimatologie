@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bioklimatologie – Klimatologická seminární práce 2026/2027</title>
+  <style>
+    :root {
+      --green: #315c4b;
+      --green-light: #eaf1ed;
+      --cream: #f7f5ef;
+      --text: #26322d;
+      --muted: #68736e;
+      --white: #ffffff;
+      --border: #dce3df;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.65;
+    }
+
+    header {
+      background: var(--green);
+      color: white;
+      padding: 70px 20px 65px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: 0.03em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 45px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      background: var(--white);
+      border-left: 5px solid var(--green);
+      padding: 24px 28px;
+      margin-bottom: 35px;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 7px 20px rgba(0,0,0,0.08);
+    }
+
+    .card .icon {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      margin: 0 0 7px;
+      color: var(--green);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-top: 55px;
+      scroll-margin-top: 25px;
+    }
+
+    section h2 {
+      color: var(--green);
+      font-size: 1.8rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+    details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin: 12px 0;
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 18px 20px;
+      font-weight: bold;
+      color: var(--green);
+      background: #fbfcfb;
+    }
+
+    summary:hover {
+      background: var(--green-light);
+    }
+
+    .details-content {
+      padding: 5px 22px 22px;
+    }
+
+    .important {
+      background: #f1eee2;
+      border-left: 4px solid #9b8b55;
+      padding: 14px 18px;
+      margin: 18px 0;
+      border-radius: 5px;
+    }
+
+    .chapter-label {
+      font-weight: bold;
+      color: var(--green);
+    }
+
+    footer {
+      margin-top: 70px;
+      padding: 30px 20px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 50px 18px;
+      }
+
+      main {
+        margin-top: 30px;
+      }
+
+      .intro {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Bioklimatologie</h1>
+  <p>Klimatologická seminární práce 2026/2027</p>
+</header>
+
+<main>
+
+  <div class="intro">
+    <strong>Informace k seminární práci</strong>
+    <p>
+      Na této stránce naleznete zadání seminární práce, jednotlivé úkoly,
+      požadavky na formu zpracování, strukturu tištěné práce a další důležité informace.
+    </p>
+  </div>
+
+  <div class="grid">
+    <a class="card" href="#zadani">
+      <div class="icon">📌</div>
+      <h3>Zadání</h3>
+      <p>Základní informace k seminární práci.</p>
+    </a>
+
+    <a class="card" href="#ukoly">
+      <div class="icon">📝</div>
+      <h3>Úkoly</h3>
+      <p>Jednotlivé úkoly a jejich podrobné zadání.</p>
+    </a>
+
+    <a class="card" href="#termin">
+      <div class="icon">📅</div>
+      <h3>Termín odevzdání</h3>
+      <p>Termín a způsob odevzdání práce.</p>
+    </a>
+
+    <a class="card" href="#forma">
+      <div class="icon">🖨️</div>
+      <h3>Forma zpracování</h3>
+      <p>Požadavky na formální úpravu práce.</p>
+    </a>
+
+    <a class="card" href="#kapitoly">
+      <div class="icon">📑</div>
+      <h3>Kapitoly práce</h3>
+      <p>Požadavky na jednotlivé kapitoly tištěné práce.</p>
+    </a>
+
+    <a class="card" href="#zdroje">
+      <div class="icon">📚</div>
+      <h3>Literatura a zdroje</h3>
+      <p>Literatura, odkazy a zdroje dat.</p>
+    </a>
+
+    <a class="card" href="#dalsi">
+      <div class="icon">ℹ️</div>
+      <h3>Další informace</h3>
+      <p>Doplňující informace a upozornění.</p>
+    </a>
+  </div>
+
+  <section id="zadani">
+    <h2>📌 Zadání</h2>
+    <div class="intro">
+      <h3>Klimatologická seminární práce 2026/2027</h3>
+      <p>
+        Cílem seminární práce je samostatné zpracování a klimatologické
+        vyhodnocení zadaných údajů pro vybranou lokalitu a období.
+      </p>
+      <p>
+        <strong>Způsob odevzdání:</strong> tištěná práce.
+      </p>
+    </div>
+  </section>
+
+  <section id="ukoly">
+    <h2>📝 Úkoly</h2>
+
+    <details>
+      <summary>Úkol 1</summary>
+      <div class="details-content">
+        <p><strong>Podrobné zadání bude doplněno.</strong></p>
+        <p>Zde bude uveden přesný postup práce, požadované výstupy, období,
+        lokalita a další instrukce.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Úkol 2</summary>
+      <div class="details-content">
+        <p><strong>Podrobné zadání bude doplněno.</strong></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Úkol 3</summary>
+      <div class="details-content">
+        <p><strong>Podrobné zadání bude doplněno.</strong></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Úkol 4</summary>
+      <div class="details-content">
+        <p><strong>Podrobné zadání bude doplněno.</strong></p>
+      </div>
+    </details>
+  </section>
+
+  <section id="termin">
+    <h2>📅 Termín odevzdání</h2>
+    <div class="intro">
+      <p><strong>Termín odevzdání:</strong> bude doplněno.</p>
+      <p><strong>Způsob odevzdání:</strong> tištěná práce.</p>
+    </div>
+  </section>
+
+  <section id="forma">
+    <h2>🖨️ Forma zpracování tištěné práce</h2>
+    <div class="intro">
+      <ul>
+        <li>Celá práce bude zpracována jednotným fontem a jednotnou velikostí písma.</li>
+        <li>Každá tabulka bude řádně očíslována a bude mít svůj název.</li>
+        <li>Každý graf bude řádně očíslován a bude mít svůj název.</li>
+        <li>Grafy a tabulky musí být v textu práce citovány a musí na ně být uveden odkaz.</li>
+        <li>Další požadavky na formální úpravu budou doplněny.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="kapitoly">
+    <h2>📑 Kapitoly tištěné práce</h2>
+
+    <details>
+      <summary>Kapitola 1 – Charakteristika přírodních podmínek</summary>
+      <div class="details-content">
+        <p>
+          Práce bude uvedena obecnou charakteristikou přírodních
+          (nikoliv hospodářských či ekonomických) podmínek regionu:
+          tedy popisem geografických, geologických, půdních, botanických,
+          zoologických, hydrologických a dalších poměrů v okolí vybrané
+          lokality a širšího regionu.
+        </p>
+        <div class="important">
+          <strong>Rozsah: 1–1,5 strany – ne více, ne méně!</strong>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Kapitola 2 – Zhodnocení klimatických podmínek</summary>
+      <div class="details-content">
+        <p>
+          Na tuto úvodní textovou část bude navazovat slovní zhodnocení
+          klimatických podmínek v zadaných periodách/letech na dané lokalitě
+          s odkazy na grafy a tabulky vypracované v rámci seminární práce.
+        </p>
+
+        <p>
+          Tato část je základem hodnocení kvality celé práce a proto jí věnujte
+          zvýšenou pozornost. Vyhodnocení konkrétního ročníku spočívá především
+          v jeho srovnání s dlouhodobými průměry.
+        </p>
+
+        <p>
+          Kromě toho se cení zejména Vaše vlastní (avšak věcně správné!)
+          postřehy a závěry. Text musí obsahovat odkazy na příslušné tabulky
+          a grafy v textu.
+        </p>
+
+        <div class="important">
+          <strong>
+            Bez kvalitně zpracované textové části nebude seminární práce uznána!!
+          </strong>
+          <br><br>
+          V případě dotazů, připomínek a nejasností se obracejte na cvičícího –
+          na pozdější reklamace nebude brán zřetel.
+        </div>
+
+        <div class="important">
+          <strong>Rozsah: min. 1 strana, max. 1,5 strany.</strong>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Kapitola 3 – Obrazová část</summary>
+      <div class="details-content">
+        <p>
+          Na dvě textové kapitoly bude navazovat poslední obrazová část,
+          kterou budou tvořit zejména grafy.
+        </p>
+        <div class="important">
+          <strong>Rozsah: neomezeno.</strong>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <section id="zdroje">
+    <h2>📚 Literatura, odkazy a zdroje dat</h2>
+    <div class="intro">
+      <p>
+        Zde bude uveden seznam doporučené literatury, internetových odkazů
+        a zdrojů klimatologických a dalších dat použitých při zpracování práce.
+      </p>
+    </div>
+  </section>
+
+  <section id="dalsi">
+    <h2>ℹ️ Další informace</h2>
+    <div class="intro">
+      <p>
+        Zde budou postupně doplňovány další informace, upozornění,
+        odpovědi na časté dotazy a případné změny zadání.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Bioklimatologie · Klimatologická seminární práce 2026/2027
+</footer>
+
+</body>
+</html>
